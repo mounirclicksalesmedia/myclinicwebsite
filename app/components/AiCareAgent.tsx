@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Icon, StarFill, type IconName } from "./Icon";
 import { useT } from "./I18nProvider";
@@ -193,16 +194,19 @@ export function AiCareAgent() {
                   width: 40,
                   height: 40,
                   borderRadius: "50%",
-                  background: "linear-gradient(135deg, var(--brand-800), var(--accent-600))",
-                  display: "grid",
-                  placeItems: "center",
-                  color: "white",
-                  fontWeight: 600,
-                  fontSize: 15,
+                  background: "var(--accent-50)",
+                  border: "1px solid var(--accent-100)",
+                  overflow: "hidden",
                   position: "relative",
                 }}
               >
-                L
+                <Image
+                  src="/avatarailina.png"
+                  alt={`${name} avatar`}
+                  fill
+                  sizes="40px"
+                  style={{ objectFit: "cover" }}
+                />
                 <span
                   className="mc-ai-status-dot"
                   style={{
@@ -276,17 +280,20 @@ export function AiCareAgent() {
                         width: 28,
                         height: 28,
                         borderRadius: "50%",
-                        background:
-                          "linear-gradient(135deg, var(--brand-800), var(--accent-600))",
-                        color: "white",
-                        fontSize: 12,
-                        fontWeight: 600,
-                        display: "grid",
-                        placeItems: "center",
+                        background: "var(--accent-50)",
+                        border: "1px solid var(--accent-100)",
+                        overflow: "hidden",
                         flexShrink: 0,
+                        position: "relative",
                       }}
                     >
-                      L
+                      <Image
+                        src="/avatarailina.png"
+                        alt=""
+                        fill
+                        sizes="28px"
+                        style={{ objectFit: "cover" }}
+                      />
                     </div>
                   )}
                   <div

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { Icon, StarFill, type IconName } from "./Icon";
@@ -412,19 +413,21 @@ export function FindDoctorAssistant({
               width: 56,
               height: 56,
               borderRadius: 16,
-              background:
-                "linear-gradient(135deg, var(--brand-800), var(--accent-600))",
-              color: "white",
-              display: "grid",
-              placeItems: "center",
-              fontSize: 22,
-              fontWeight: 600,
+              background: "var(--accent-50)",
+              border: "1px solid var(--accent-100)",
+              overflow: "hidden",
               flexShrink: 0,
               boxShadow: "0 12px 32px rgba(47, 181, 164, 0.25)",
               position: "relative",
             }}
           >
-            L
+            <Image
+              src="/avatarailina.png"
+              alt="Lina AI care navigator avatar"
+              fill
+              sizes="56px"
+              style={{ objectFit: "cover" }}
+            />
             <span
               style={{
                 position: "absolute",

@@ -1381,6 +1381,12 @@ a.link:hover { color: var(--accent-600); }
     flex-wrap: wrap;
   }
 
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+
   .hhc-hero {
     padding-top: 32px !important;
     padding-bottom: 48px !important;
