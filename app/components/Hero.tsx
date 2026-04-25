@@ -74,6 +74,7 @@ export function Hero() {
             }}
           >
             <div
+              className="mc-hero-booking-eyebrow"
               style={{
                 fontSize: 11,
                 color: "var(--ink-500)",
@@ -84,8 +85,8 @@ export function Hero() {
             >
               {pick("Today · Next available", "اليوم · الموعد القادم")}
             </div>
-            <div className="flex" style={{ gap: 12, alignItems: "center", marginBottom: 14 }}>
-              <div className="ph ph-accent" style={{ width: 48, height: 48, borderRadius: "50%" }}>
+            <div className="flex mc-hero-booking-doctor" style={{ gap: 12, alignItems: "center", marginBottom: 14 }}>
+              <div className="ph ph-accent mc-hero-booking-avatar" style={{ width: 48, height: 48, borderRadius: "50%" }}>
                 <span className="ph-label" style={{ fontSize: 9 }}>
                   DR
                 </span>
@@ -99,7 +100,7 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="flex" style={{ gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
+            <div className="flex mc-hero-booking-slots" style={{ gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
               {["10:30", "11:15", "14:00", "16:45"].map((s) => (
                 <span
                   key={s}
@@ -116,40 +117,9 @@ export function Hero() {
                 </span>
               ))}
             </div>
-            <button className="btn btn-accent" style={{ width: "100%", padding: "10px" }}>
+            <button className="btn btn-accent mc-hero-booking-confirm" style={{ width: "100%", padding: "10px" }}>
               {pick("Confirm booking", "تأكيد الحجز")}
             </button>
-          </div>
-
-          <div
-            className="reveal reveal-delay-3 mc-hero-badge"
-            style={{
-              position: "absolute",
-              top: 24,
-              right: -16,
-              width: 140,
-              background: "var(--brand-900)",
-              color: "white",
-              borderRadius: "var(--card-radius)",
-              padding: 16,
-            }}
-          >
-            <Icon name="shield" size={20} />
-            <div
-              style={{
-                fontSize: 11,
-                opacity: 0.7,
-                marginTop: 8,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-              }}
-            >
-              {pick("Accreditation", "الاعتماد")}
-            </div>
-            <div style={{ fontSize: 15, fontWeight: 600, marginTop: 4 }}>JCI · CBAHI</div>
-            <div style={{ fontSize: 11, opacity: 0.6, marginTop: 2 }}>
-              {pick("Gold Standard", "المعيار الذهبي")}
-            </div>
           </div>
         </div>
       </div>
