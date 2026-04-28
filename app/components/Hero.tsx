@@ -46,7 +46,7 @@ export function Hero() {
 
         <div className="mc-hero-media" style={{ position: "relative", height: 600 }}>
           <Image
-            src="/hero-medical-team-gulf.png"
+            src="/myclinichero.png"
             alt="Professional Gulf medical team of three doctors in a modern clinic"
             fill
             priority
